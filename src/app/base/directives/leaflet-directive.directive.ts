@@ -20,7 +20,6 @@ export class LeafletDirectiveDirective implements AfterViewInit {
       center: [this.lat, this.long],
       zoom: 3
     });
-    console.dir([this.lat, this.long]);
     const tiles = tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 30,
       minZoom: 18
@@ -30,7 +29,7 @@ export class LeafletDirectiveDirective implements AfterViewInit {
   }
 
 
-  get map() {
+  get map(): Map {
     return this.leafletMap;
   }
 

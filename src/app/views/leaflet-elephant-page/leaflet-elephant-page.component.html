@@ -1,0 +1,9 @@
+<div class="map-container">
+  <div class="map-frame">
+    <button (click)="travelToElephant()" *ngIf="!elephantInTheRoom">Where is the elephant ?</button>
+    <img ngSrc="/assets/elephant.png" height="295" width="236" *ngIf="elephantInTheRoom"  alt="Elephant image"/>
+    <div appMap [lat]="36.83359606938916" [long]="10.147116233476737" ></div>
+
+  </div>
+</div>
+
