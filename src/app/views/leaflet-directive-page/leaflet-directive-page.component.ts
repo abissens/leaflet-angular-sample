@@ -1,11 +1,11 @@
 import {Component} from '@angular/core';
-import {LeafletDirectiveDirective} from '../../base/directives/leaflet-directive.directive';
+import {LeafletDirective} from '../../base/directives/leaflet.directive';
 
 @Component({
   selector: 'app-leaflet-directive-page',
   standalone: true,
   imports: [
-    LeafletDirectiveDirective
+    LeafletDirective
   ],
   templateUrl: './leaflet-directive-page.component.html',
   styleUrl: './leaflet-directive-page.component.less'

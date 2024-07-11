@@ -5,7 +5,7 @@ import {map, Map, tileLayer} from 'leaflet';
   selector: '[appMap]',
   standalone: true
 })
-export class LeafletDirectiveDirective implements AfterViewInit {
+export class LeafletDirective implements AfterViewInit {
   @Input() lat: number = 39.8282;
   @Input() long: number = -98.5795;
 

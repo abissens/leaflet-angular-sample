@@ -1,5 +1,5 @@
 import {AfterViewInit, Component, ViewChild} from '@angular/core';
-import {LeafletDirectiveDirective} from '../../base/directives/leaflet-directive.directive';
+import {LeafletDirective} from '../../base/directives/leaflet.directive';
 import {NgIf, NgOptimizedImage} from '@angular/common';
 
 
@@ -7,7 +7,7 @@ import {NgIf, NgOptimizedImage} from '@angular/common';
   selector: 'app-leaflet-elephant-page',
   standalone: true,
   imports: [
-    LeafletDirectiveDirective,
+    LeafletDirective,
     NgIf,
     NgOptimizedImage
   ],
@@ -16,7 +16,7 @@ import {NgIf, NgOptimizedImage} from '@angular/common';
 })
 export class LeafletElephantPageComponent implements AfterViewInit {
 
-  @ViewChild(LeafletDirectiveDirective) appMap!: LeafletDirectiveDirective;
+  @ViewChild(LeafletDirective) appMap!: LeafletDirective;
   elephantInTheRoom: boolean = false;
 
   ngAfterViewInit(): void {
